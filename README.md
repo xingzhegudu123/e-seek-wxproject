@@ -11,7 +11,7 @@
  - 用户授权wx.authorize和wx.getUserInfo获取用户信息
  -  自定义组件：pages页面下json配置关联组件
  -  map地图：Command.geoNear附近人查找和wx.getLocation定位地理位置
- -  缓存搜素历史记录: 通过wx.setStorage设置db.RegExp实现模糊搜索
+ -  缓存搜索历史记录: 通过wx.setStorage设置db.RegExp实现模糊搜索
  - 云开发:云存储，云函数,云数据库（修改用户头像和昵称）
  -  利用koa2搭建cms服务端上传图片到云数据库更新轮播图
 
