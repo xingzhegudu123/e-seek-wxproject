@@ -1,0 +1,5 @@
+<!--miniprogram/pages/editUserInfo/wexin/wexin.wxml-->
+<view>
+<button bindtap="handleBtn">设置微信号</button>
+<input type="text" value="{{ wexinNumber }}"  bindinput="handleText"/>
+</view>

@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/near/near",
+    "pages/message/message",
+    "pages/user/user",
+    "pages/editUserInfo/editUserInfo",
+    "pages/friendList/friendList",
+    "pages/detail/detail",
+    "pages/editUserInfo/head/head",
+    "pages/editUserInfo/name/name",
+    "pages/editUserInfo/signature/signature",
+    "pages/editUserInfo/location/location",
+    "pages/editUserInfo/phone/phone",
+    "pages/editUserInfo/wexin/wexin"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#937bf5",
+    "navigationBarTitleText": "E消息",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "iconPath": "images/tabBar/index.png",
+        "selectedIconPath": "images/tabBar/index_active.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/tabBar/near.png",
+        "selectedIconPath": "images/tabBar/near_active.png",
+        "pagePath": "pages/near/near",
+        "text": "附近"
+      },
+      {
+        "iconPath": "images/tabBar/message.png",
+        "selectedIconPath": "images/tabBar/message_active.png",
+        "pagePath": "pages/message/message",
+        "text": "消息"
+      },
+      {
+        "iconPath": "images/tabBar/user.png",
+        "selectedIconPath": "images/tabBar/user_active.png",
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

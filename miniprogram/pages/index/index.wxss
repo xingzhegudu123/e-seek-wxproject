@@ -1,0 +1,34 @@
+/* miniprogram/pages/index/index.wxss */
+.index-swiper{
+  margin: 20rpx;
+  height: 300rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin-top: 90rpx;
+}
+.index-swiper image{
+  width:100%;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+/* 推荐 */
+.index-tab{
+  display: flex;
+}
+.index-tab view{
+  flex:1;
+  text-align: center;
+  padding: 10rpx;
+  margin: 10rpx;
+  
+}
+.index-tab view.active{
+  border-bottom: 1rpx red solid; color:red;
+  
+}
+/*  */
+.index-list{display: flex; flex-wrap: wrap;  }
+.index-list-item{width: 50%; margin: 10rpx 0}
+.index-list-item image{width: 90%; height:250rpx; display: block; margin: 0 auto}
+.index-list-text{width: 90%; display: flex; justify-content: space-between; margin: 0 auto;font-size: 24rpx; color:#707070;}
+.index-list-text .text-left{vertical-align:middle}

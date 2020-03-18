@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/axios.min.js"> </script>
+  </head>
+  <body>
+    <h1>E消息-cms管理系统</h1>
+    <p></p>
+    <label for="">
+       上传图片: <input type="file"  id="uploadBtn"     />
+     </label>
+
+      <!-- <form action="/upload" method="POST" enctype="multipart/form-data">
+      <p>file Upload</p>
+      <span>姓名: </span><input type="text" name="name" /> <br />
+      <span>年龄:</span><input type="text" name="age" /> <br />
+      <span>选择提交文件：</span>
+      <input type="file" name="file" /> <br />
+      <button type="submit">提交</button>
+    </form> -->
+
+      <script>
+      var uploadBtn = document.getElementById('uploadBtn');
+      uploadBtn.onchange = function(ev){
+        var file = ev.target.files[0];
+        var param = new FormData();
+        param.append('file' , file);
+       
+        var config = {
+          headers : {
+            'Content-Type' : 'multipart/form-data'
+          }
+        };
+  
+        axios.post('/uploadBannerImg',param , config).then((res)=>{
+  
+      
+  
+        });
+  
+      };
+      </script>
+  </body>
+</html>
